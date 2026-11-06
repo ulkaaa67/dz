@@ -1,0 +1,77 @@
+< <!DOCTYPE html>
+    <html lang="uk">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: white;
+            }
+
+            .cont {
+                width: 350px;
+                height: 200px;
+                background-color: #eeeeee;
+                border: 1px solid silver;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cont1 {
+                cursor: pointer;
+                width: 330px;
+                height: 165px;
+                background-color: purple;
+                border: 2px solid black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 3s;
+            }
+
+            .image,
+            .cont2 {
+                width: 100%;
+                height: 100%;
+                background-color: purple;
+                transition: width 3s;
+            }
+
+            .cont1:hover {
+                background-color: black;
+                background-image: url(./kartinki/scary.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
+            .cont1:hover .image,
+            .cont1:hover .cont2 {
+                width: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>OPEN ME--></h1>
+
+        <div class="cont">
+            <div class="cont1">
+                <div class="image"></div>
+                <div class="cont2"></div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
